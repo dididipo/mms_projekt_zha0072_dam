@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Limity – Matematika I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Matematika I</div>
+    <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="limity.html" class="active">Limity</a></li>
+        <li><a href="derivace.html" class="active">Derivace</a></li>
+        <li><a href="matice.html" class="active">Matice</a></li>
+        <li><a href="priklady.html" class="active">Příklady</a></li>
+    </ul>
+    <a href="limity-en.html" class="lang-switch">EN</a>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1 class="animated-title">
+            <span>L</span><span>i</span><span>m</span><span>i</span><span>t</span><span>y</span>
+        </h1>
+        <p>Detailní a přehledný úvod do teorií a výpočtů limit</p>
+    </div>
+</header>
+
+
+
+<section class="about">
+    <h2>Co je limita?</h2>
+    <p>
+        Limita je jeden ze základních pojmů matematiky, který popisuje chování funkce v blízkosti určitého bodu.
+        Můžeme ji chápat jako odpověď na otázku:
+    </p>
+
+    <p style="font-style:italic;">
+        „K jakému číslu se funkční hodnota nejvíce přibližuje, když se x blíží k určitému číslu?“
+    </p>
+
+    <p>
+        Pokud například funkce nemá v daném bodě definovanou hodnotu, nebo má „skok“, stále můžeme určit,
+        jaké hodnotě se přibližuje – a to je právě limita.
+    </p>
+
+    <p><b>Limity jsou klíčové pro:</b></p>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li>definici derivace</li>
+        <li>analýzu spojitosti funkcí</li>
+        <li>studium asymptot a extrémů</li>
+        <li>aplikace v modelování a fyzice</li>
+        <li>výpočty okamžité rychlosti a změny</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Kde se limity používají v životě?</h2>
+
+    <ul style="text-align:left; max-width: 80%; margin: 0 auto;">
+        <li> <b>Ekonomie</b> – výpočet okamžitého růstu ceny nebo změny poptávky.</li>
+        <li> <b>Fyzika</b> – okamžitá rychlost je definována limitem průměrné rychlosti.</li>
+        <li> <b>Informatika</b> – analýza algoritmů, aproximace a limity posloupností.</li>
+        <li> <b>Statistika</b> – limity při počítání pravděpodobností a hustot.</li>
+        <li> <b>Biologie & Chemie</b> – modelování růstu, koncentrací a reakcí.</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Teoretická část – základní pravidla limit</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>1. Limita součtu:</b>  lim(f + g) = lim f + lim g</li>
+        <li><b>2. Limita rozdílu:</b>  lim(f − g) = lim f − lim g</li>
+        <li><b>3. Limita součinu:</b> lim(f · g) = (lim f) · (lim g)</li>
+        <li><b>4. Limita podílu:</b> lim(f / g) = lim f / lim g (pokud lim g ≠ 0)</li>
+        <li><b>5. Limita konstanty:</b> lim(c) = c</li>
+        <li><b>6. Limita x → a:</b> lim x = a</li>
+        <li><b>7. Limita složené funkce:</b> lim f(g(x)) = f(lim g(x)), pokud je f spojitá</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Praktická část – řešené příklady</h2>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 1 – limita součtu</h3>
+    <p>
+        Spočítejte: <br>
+        <b>lim (x → 2) (3x + 5x²)</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>Použijeme pravidlo lim(f + g) = lim f + lim g</li>
+        <li>lim 3x = 3·2 = 6</li>
+        <li>lim 5x² = 5·(2²) = 20</li>
+        <li><b>Výsledek: 6 + 20 = 26</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 2 – limita rozdílu</h3>
+    <p>
+        Spočítejte: <br>
+        <b>lim (x → 4) (x² − 7)</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>lim x² = 4² = 16</li>
+        <li>lim 7 = 7</li>
+        <li><b>Výsledek: 16 − 7 = 9</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 3 – limita součinu</h3>
+    <p>
+        Spočítejte: <br>
+        <b>lim (x → 1) (2x · (x + 3))</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>lim 2x = 2·1 = 2</li>
+        <li>lim (x + 3) = 1 + 3 = 4</li>
+        <li><b>Výsledek: 2 · 4 = 8</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 4 – limita podílu</h3>
+    <p>
+        Najděte: <br>
+        <b>lim (x → 2) ( (x² − 4) / (x − 2) )</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>Přímé dosazení → 0/0 → neurčitý výraz → musíme upravit</li>
+        <li>Rozložíme: x² − 4 = (x − 2)(x + 2)</li>
+        <li>Zkrátíme: (x − 2) se zruší</li>
+        <li>Dostáváme: lim (x → 2) (x + 2) = 4</li>
+        <li><b>Výsledek: 4</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 5 – limita konstanty</h3>
+    <p>
+        Spočítejte:<br>
+        <b>lim (x → 10) 7</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>Konstantní funkce se nemění</li>
+        <li><b>Výsledek: 7</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 6 – limita x → a</h3>
+    <p>
+        Spočítejte:<br>
+        <b>lim (x → 5) x</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>Funkce y = x má limitu rovnou hodnotě, ke které se x blíží</li>
+        <li><b>Výsledek: 5</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 7 – složená funkce</h3>
+    <p>
+        Spočítejte:<br>
+        <b>lim (x → 1) √(3x + 1)</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>Vnitřní limita: lim (3x + 1) = 3·1 + 1 = 4</li>
+        <li>Funkce √x je spojitá → lze dosadit</li>
+        <li><b>Výsledek: √4 = 2</b></li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>© 2025 Matematika I</p>
+</footer>
+
+</body>
+</html>

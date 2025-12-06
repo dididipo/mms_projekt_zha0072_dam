@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Matice – Matematika I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Matematika I</div>
+    <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="limity.html">Limity</a></li>
+        <li><a href="derivace.html">Derivace</a></li>
+        <li><a href="matice.html" class="active">Matice</a></li>
+        <li><a href="priklady.html" class="active">Příklady</a></li>
+    </ul>
+    <a href="matice-en.html" class="lang-switch">EN</a>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1 class="animated-title">
+            <span>M</span><span>a</span><span>t</span><span>i</span><span>c</span><span>e</span>
+        </h1>
+        <p>Úvod do matic, operací s nimi a řešených příkladů</p>
+    </div>
+</header>
+
+
+
+<section class="about">
+    <h2>Co jsou matice?</h2>
+    <p>
+        Matice je uspořádaná tabulka čísel, která je zapsána do řádků a sloupců.
+        Používá se k popisu lineárních transformací, soustav rovnic, 3D grafiky a mnoha dalších oblastí.
+    </p>
+
+    <p>
+        Obecná matice má tvar:
+    </p>
+
+    <p style="text-align:center; font-style:italic;">
+        A =
+        [
+        a<sub>11</sub> &nbsp; a<sub>12</sub> &nbsp; … &nbsp; a<sub>1n</sub><br>
+        a<sub>21</sub> &nbsp; a<sub>22</sub> &nbsp; … &nbsp; a<sub>2n</sub><br>
+        ⋮<br>
+        a<sub>m1</sub> &nbsp; a<sub>m2</sub> &nbsp; … &nbsp; a<sub>mn</sub>
+        ]
+    </p>
+
+    <p>
+        Matice lze sčítat, násobit, dělit skalárem, počítat determinant, transpozici a další operace.
+    </p>
+</section>
+
+
+<section class="about">
+    <h2>Kde se matice používají v životě?</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li>🎮 <b>3D grafika</b> – rotace, posun a měřítko objektů.</li>
+        <li>🤖 <b>Umělá inteligence</b> – výpočty v neuronových sítích.</li>
+        <li>💰 <b>Ekonomie</b> – modelování trhů a statistické matice.</li>
+        <li>🏎 <b>Fyzika</b> – transformace soustav sil a pohybu.</li>
+        <li>📡 <b>Telekomunikace</b> – kódování signálů a šumy.</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Teoretická část – základní pojmy a operace s maticemi</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>1. Součet matic:</b> A + B (číselně sčítáme odpovídající prvky)</li>
+        <li><b>2. Rozdíl matic:</b> A − B (stejný princip jako součet)</li>
+        <li><b>3. Násobení skalárem:</b> kA (každý prvek se násobí k)</li>
+        <li><b>4. Násobení matic:</b> A·B (řádky A × sloupce B)</li>
+        <li><b>5. Transpozice:</b> Aᵀ (vyměníme řádky a sloupce)</li>
+        <li><b>6. Determinant:</b> |A| (číslo charakterizující vlastnosti matice)</li>
+        <li><b>7. Inverzní matice:</b> A⁻¹ (matice, která “ruší” účinek A)</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Praktická část – řešené příklady</h2>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 1 – součet matic</h3>
+    <p>
+        Spočítejte A + B, kde:<br><br>
+        A = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3  &nbsp; 4]<br><br>
+        B = [5  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0  &nbsp; 2]
+    </p>
+
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>Sčítáme po prvcích</li>
+        <li>[1+5  &nbsp; 2+1]</li>
+        <li>[3+0  &nbsp; 4+2]</li>
+        <li><b>Výsledek: [6  &nbsp; 3], [3  &nbsp; 6]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 2 – rozdíl matic</h3>
+    <p>
+        Spočítejte A − B.<br><br>
+        A = [4  &nbsp; 6]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7  &nbsp; 2]<br><br>
+        B = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5  &nbsp; 3]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>[4−1 &nbsp; 6−2]</li>
+        <li>[7−5 &nbsp; 2−3]</li>
+        <li><b>Výsledek: [3  &nbsp; 4], [2  &nbsp; −1]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 3 – násobení skalárem</h3>
+    <p>
+        Spočítejte 3A.<br><br>
+        A = [2  &nbsp; −1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0  &nbsp; 4]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>3 × každé číslo</li>
+        <li>[6 &nbsp; −3]</li>
+        <li>[0 &nbsp; 12]</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 4 – násobení matic</h3>
+    <p>
+        Spočítejte A·B, kde:<br><br>
+        A = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3  &nbsp; 4]<br><br>
+        B = [0  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1  &nbsp; 0]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>výsledek bude matice 2×2</li>
+        <li>první prvek: 1·0 + 2·1 = 2</li>
+        <li>druhý: 1·1 + 2·0 = 1</li>
+        <li>třetí: 3·0 + 4·1 = 4</li>
+        <li>čtvrtý: 3·1 + 4·0 = 3</li>
+        <li><b>Výsledek: [2  &nbsp; 1], [4  &nbsp; 3]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 5 – transpozice</h3>
+    <p>
+        Najděte Aᵀ.<br><br>
+        A = [1 &nbsp; 4 &nbsp; 7]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2 &nbsp; 5 &nbsp; 8]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>Vyměníme řádky a sloupce</li>
+        <li>[1  &nbsp; 2]</li>
+        <li>[4  &nbsp; 5]</li>
+        <li>[7  &nbsp; 8]</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 6 – determinant 2×2</h3>
+    <p>
+        Spočítejte determinant matice:<br>
+        A = [3  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4  &nbsp; 2]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>|A| = 3·2 − 1·4</li>
+        <li>|A| = 6 − 4</li>
+        <li><b>|A| = 2</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 7 – inverzní matice</h3>
+    <p>
+        Najděte A⁻¹ pro matici A =
+        [1 &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3 &nbsp; 4]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>determinant: |A| = 1·4 − 2·3 = −2</li>
+        <li>vzorec pro 2×2 inverzi:</li>
+        <li>A⁻¹ = (1/|A|) · [d  &nbsp; −b]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[−c &nbsp; a]</li>
+        <li>A⁻¹ = (-1/2) · [4 &nbsp; −2]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-4 &nbsp; 1]</li>
+        <li><b>A⁻¹ = [-2 &nbsp; 1], [2 &nbsp; -0.5]</b></li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>© 2025 Matematika I</p>
+</footer>
+
+</body>
+</html>
