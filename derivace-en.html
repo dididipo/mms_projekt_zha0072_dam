@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Derivatives – Mathematics I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Mathematics I</div>
+    <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="limity-en.html">Limits</a></li>
+        <li><a href="derivace-en.html" class="active">Derivatives</a></li>
+        <li><a href="matice-en.html">Matrices</a></li>
+        <li><a href="priklady-en.html">Examples</a></li>
+    </ul>
+
+    <a href="derivace.html" class="lang-switch">CZ</a>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1 class="animated-title">
+            <span>D</span><span>e</span><span>r</span><span>i</span><span>v</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span><span>s</span>
+        </h1>
+        <p>Derivatives as a tool for understanding instantaneous change and the behavior of functions</p>
+    </div>
+</header>
+
+
+
+<section class="about">
+    <h2>What is a derivative?</h2>
+    <p>
+        A derivative is a mathematical tool that describes the <b>instantaneous rate of change</b> of a function.
+        In practice, it tells us <i>how fast a function is increasing or decreasing</i> as the variable x changes slightly.
+    </p>
+
+    <p>The derivative is formally defined using limits:</p>
+
+    <p style="font-style:italic; text-align:center;">
+        f′(x) = lim (h → 0) [f(x + h) − f(x)] / h
+    </p>
+
+    <p>
+        Derivatives have enormous importance in science, engineering, economics, and everyday life.
+    </p>
+</section>
+
+
+<section class="about">
+    <h2>Where are derivatives used?</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>Physics</b> – instantaneous velocity, acceleration.</li>
+        <li><b>Economics</b> – growth, maximum profit, production optimum.</li>
+        <li><b>Informatics / Computer Science</b> – optimization of algorithms, ML models.</li>
+        <li><b>Statistics</b> – changes in probability density functions.</li>
+        <li><b>Natural sciences</b> – changes in concentrations and reactions.</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Theoretical Part – Basic Derivative Rules</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>1. Sum rule:</b> (f + g)' = f' + g'</li>
+        <li><b>2. Difference rule:</b> (f − g)' = f' − g'</li>
+        <li><b>3. Product rule:</b> (fg)' = f'g + fg'</li>
+        <li><b>4. Quotient rule:</b> (f/g)' = (f'g − fg') / g²</li>
+        <li><b>5. Derivative of a constant:</b> (c)' = 0</li>
+        <li><b>6. Derivative of xⁿ:</b> (xⁿ)' = n·xⁿ⁻¹</li>
+        <li><b>7. Chain rule:</b> (f(g(x)))' = f'(g(x)) · g'(x)</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Practical Part – Solved Examples</h2>
+
+
+    <h3 style="color:#c8f7ff;">Example 1 – Derivative of a sum</h3>
+    <p>Find the derivative of:
+        <b>f(x) = 3x² + 5x</b>
+    </p>
+    <p><b>Solution:</b></p>
+    <ul style="text-align:left;">
+        <li>derivative of 3x² is 6x</li>
+        <li>derivative of 5x is 5</li>
+        <li><b>Result: f′(x) = 6x + 5</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 2 – Derivative of a difference</h3>
+    <p>Find the derivative of:
+        <b>f(x) = x³ − 4x</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>(x³)' = 3x²</li>
+        <li>(4x)' = 4</li>
+        <li><b>f′(x) = 3x² − 4</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 3 – Product rule</h3>
+    <p>
+        Compute:
+        <b>f(x) = x² · (x + 1)</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>f′ = (x²)'(x+1) + x²( (x+1)' )</li>
+        <li>(x²)' = 2x</li>
+        <li>(x+1)' = 1</li>
+        <li>f′ = 2x(x+1) + x²</li>
+        <li>f′ = 2x² + 2x + x² = <b>3x² + 2x</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 4 – Quotient rule</h3>
+    <p>
+        Compute:
+        <b>f(x) = (3x² − 1) / x</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>f′ = ( (3x²−1)'·x − (3x²−1)·x' ) / x²</li>
+        <li>(3x²−1)' = 6x</li>
+        <li>x' = 1</li>
+        <li>f′ = (6x·x − (3x²−1)) / x²</li>
+        <li>f′ = (6x² − 3x² + 1) / x²</li>
+        <li><b>f′ = 3 + 1/x²</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 5 – Derivative of a constant</h3>
+    <p>
+        Compute:
+        <b>f(x) = 7</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>a constant does not change → derivative is 0</li>
+        <li><b>f′(x) = 0</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 6 – Derivative of xⁿ</h3>
+    <p>
+        Compute:
+        <b>(x⁵)'</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>Use the rule n·xⁿ⁻¹</li>
+        <li>(x⁵)' = 5x⁴</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 7 – Chain rule</h3>
+    <p>
+        Find the derivative of:
+        <b>f(x) = √(2x + 5)</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>outer function: √u → derivative is 1 / (2√u)</li>
+        <li>inner function: 2x + 5 → derivative is 2</li>
+        <li>f′(x) = (1 / (2√(2x+5))) · 2</li>
+        <li><b>f′(x) = 1 / √(2x+5)</b></li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>© 2025 Mathematics I</p>
+</footer>
+
+</body>
+</html>

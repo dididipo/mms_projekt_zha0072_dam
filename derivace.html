@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Derivace – Matematika I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Matematika I</div>
+    <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="limity.html">Limity</a></li>
+        <li><a href="derivace.html" class="active">Derivace</a></li>
+        <li><a href="matice.html" class="active">Matice</a></li>
+        <li><a href="priklady.html" class="active">Příklady</a></li>
+    </ul>
+    <a href="derivace-en.html" class="lang-switch">EN</a>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1 class="animated-title">
+            <span>D</span><span>e</span><span>r</span><span>i</span><span>v</span><span>a</span><span>c</span><span>e</span>
+        </h1>
+        <p>Derivace jako nástroj pro výpočet okamžité změny a pochopení chování funkcí</p>
+    </div>
+</header>
+
+
+
+<section class="about">
+    <h2>Co je derivace?</h2>
+    <p>
+        Derivace je matematický nástroj, který popisuje <b>okamžitou rychlost změny</b> dané funkce.
+        V praxi říká, <i>jak rychle roste nebo klesá hodnota funkce</i> při malé změně proměnné x.
+    </p>
+
+    <p>
+        Formálně se derivace definuje pomocí limit:
+    </p>
+
+    <p style="font-style:italic; text-align:center;">
+        f′(x) = lim (h → 0) [f(x + h) − f(x)] / h
+    </p>
+
+    <p>
+        Derivace má obrovský význam ve vědě, technice, ekonomii i každodenním životě.
+    </p>
+</section>
+
+
+<section class="about">
+    <h2>Kde se derivace používají v životě?</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li> <b>Fyzika</b> – okamžitá rychlost, zrychlení.</li>
+        <li> <b>Ekonomie</b> – růst, maximum zisku, optimum výroby.</li>
+        <li> <b>Informatika</b> – optimalizace algoritmů, ML modely.</li>
+        <li> <b>Statistika</b> – změny pravděpodobnostních funkcí.</li>
+        <li> <b>Přírodní vědy</b> – změny koncentrací a reakcí.</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Teoretická část – základní pravidla derivací</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>1. Derivace součtu:</b> (f + g)' = f' + g'</li>
+        <li><b>2. Derivace rozdílu:</b> (f − g)' = f' − g'</li>
+        <li><b>3. Derivace součinu:</b> (fg)' = f'g + fg'</li>
+        <li><b>4. Derivace podílu:</b> (f/g)' = (f'g − fg') / g²</li>
+        <li><b>5. Derivace konstanty:</b> (c)' = 0</li>
+        <li><b>6. Derivace xⁿ:</b> (xⁿ)' = n·xⁿ⁻¹</li>
+        <li><b>7. Derivace složené funkce:</b> (f(g(x)))' = f'(g(x)) · g'(x)</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Praktická část – řešené příklady</h2>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 1 – derivace součtu</h3>
+    <p>Najděte derivaci:
+        <b>f(x) = 3x² + 5x</b>
+    </p>
+    <p><b>Řešení:</b></p>
+    <ul style="text-align:left;">
+        <li>derivace 3x² je 6x</li>
+        <li>derivace 5x je 5</li>
+        <li><b>Výsledek: f′(x) = 6x + 5</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 2 – derivace rozdílu</h3>
+    <p>Najděte derivaci:
+        <b>f(x) = x³ − 4x</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>(x³)' = 3x²</li>
+        <li>(4x)' = 4</li>
+        <li><b>f′(x) = 3x² − 4</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 3 – derivace součinu</h3>
+    <p>
+        Spočítejte:
+        <b>f(x) = x² · (x + 1)</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>f′ = (x²)'(x+1) + x²( (x+1)' )</li>
+        <li>(x²)' = 2x</li>
+        <li>(x+1)' = 1</li>
+        <li>f′ = 2x(x+1) + x²</li>
+        <li>f′ = 2x² + 2x + x² = <b>3x² + 2x</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 4 – derivace podílu</h3>
+    <p>
+        Spočítejte:
+        <b>f(x) = (3x² − 1) / x</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>f′ = ( (3x²−1)'·x − (3x²−1)·x' ) / x²</li>
+        <li>(3x²−1)' = 6x</li>
+        <li>x' = 1</li>
+        <li>f′ = (6x·x − (3x²−1)) / x²</li>
+        <li>f′ = (6x² − 3x² + 1) / x²</li>
+        <li><b>f′ = 3 + 1/x²</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 5 – derivace konstanty</h3>
+    <p>
+        Spočítejte:
+        <b>f(x) = 7</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>konstanta se nemění → derivace je 0</li>
+        <li><b>f′(x) = 0</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 6 – derivace xⁿ</h3>
+    <p>
+        Spočítejte:
+        <b>(x⁵)'</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>Použijeme pravidlo n·xⁿ⁻¹</li>
+        <li>(x⁵)' = 5x⁴</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Příklad 7 – složená funkce</h3>
+    <p>
+        Najděte derivaci:
+        <b>f(x) = √(2x + 5)</b>
+    </p>
+    <ul style="text-align:left;">
+        <li>vnější funkce: √u → derivace je 1 / (2√u)</li>
+        <li>vnitřní funkce: 2x + 5 → derivace je 2</li>
+        <li>f′(x) = (1 / (2√(2x+5))) · 2</li>
+        <li><b>f′(x) = 1 / √(2x+5)</b></li>
+    </ul>
+
+</section>
+
+
+<footer>
+    <p>© 2025 Matematika I</p>
+</footer>
+
+</body>
+</html>

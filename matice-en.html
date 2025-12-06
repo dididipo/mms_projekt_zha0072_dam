@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrices – Mathematics I</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Mathematics I</div>
+    <ul>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="limity-en.html">Limits</a></li>
+        <li><a href="derivace-en.html">Derivatives</a></li>
+        <li><a href="matice-en.html" class="active">Matrices</a></li>
+        <li><a href="priklady-en.html">Examples</a></li>
+    </ul>
+
+    <a href="matice.html" class="lang-switch">CZ</a>
+</nav>
+
+
+<header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h1 class="animated-title">
+            <span>M</span><span>a</span><span>t</span><span>r</span><span>i</span><span>c</span><span>e</span><span>s</span>
+        </h1>
+        <p>An introduction to matrices, matrix operations, and solved examples</p>
+    </div>
+</header>
+
+
+
+<section class="about">
+    <h2>What are matrices?</h2>
+    <p>
+        A matrix is an ordered table of numbers arranged into rows and columns.
+        It is used to describe linear transformations, systems of equations, 3D graphics, and many other fields.
+    </p>
+
+    <p>
+        A general matrix has the form:
+    </p>
+
+    <p style="text-align:center; font-style:italic;">
+        A =
+        [ a<sub>11</sub> &nbsp; a<sub>12</sub> &nbsp; … &nbsp; a<sub>1n</sub><br>
+        a<sub>21</sub> &nbsp; a<sub>22</sub> &nbsp; … &nbsp; a<sub>2n</sub><br>
+        ⋮<br>
+        a<sub>m1</sub> &nbsp; a<sub>m2</sub> &nbsp; … &nbsp; a<sub>mn</sub> ]
+    </p>
+
+    <p>
+        Matrices can be added, subtracted, multiplied, scaled, transposed, and used to compute determinants and inverses.
+    </p>
+</section>
+
+
+<section class="about">
+    <h2>Where are matrices used in real life?</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li>🎮 <b>3D graphics</b> – rotation, translation, and scaling of objects.</li>
+        <li>🤖 <b>Artificial Intelligence</b> – computations in neural networks.</li>
+        <li>💰 <b>Economics</b> – market modelling and statistical matrices.</li>
+        <li>🏎 <b>Physics</b> – transformation of forces and motion.</li>
+        <li>📡 <b>Telecommunications</b> – signal encoding and noise filtering.</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Theoretical Part – Basic Concepts and Matrix Operations</h2>
+
+    <ul style="text-align:left; max-width:80%; margin:0 auto;">
+        <li><b>1. Matrix addition:</b> A + B (add corresponding elements)</li>
+        <li><b>2. Matrix subtraction:</b> A − B (same principle as addition)</li>
+        <li><b>3. Scalar multiplication:</b> kA (each element multiplied by k)</li>
+        <li><b>4. Matrix multiplication:</b> A·B (rows of A × columns of B)</li>
+        <li><b>5. Transpose:</b> Aᵀ (swap rows and columns)</li>
+        <li><b>6. Determinant:</b> |A| (a number describing matrix properties)</li>
+        <li><b>7. Inverse matrix:</b> A⁻¹ (the matrix that “reverses” the effect of A)</li>
+    </ul>
+</section>
+
+
+<section class="about">
+    <h2>Practical Part – Solved Examples</h2>
+
+
+    <h3 style="color:#c8f7ff;">Example 1 – Matrix addition</h3>
+    <p>
+        Compute A + B, where:<br><br>
+        A = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3  &nbsp; 4]<br><br>
+        B = [5  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0  &nbsp; 2]
+    </p>
+
+    <p><b>Solution:</b></p>
+    <ul style="text-align:left;">
+        <li>Add element-wise</li>
+        <li>[1+5 &nbsp; 2+1]</li>
+        <li>[3+0 &nbsp; 4+2]</li>
+        <li><b>Result: [6 &nbsp; 3], [3 &nbsp; 6]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 2 – Matrix subtraction</h3>
+    <p>
+        Compute A − B.<br><br>
+        A = [4  &nbsp; 6]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[7  &nbsp; 2]<br><br>
+        B = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[5  &nbsp; 3]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>[4−1 &nbsp; 6−2]</li>
+        <li>[7−5 &nbsp; 2−3]</li>
+        <li><b>Result: [3 &nbsp; 4], [2 &nbsp; −1]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 3 – Scalar multiplication</h3>
+    <p>
+        Compute 3A.<br><br>
+        A = [2  &nbsp; −1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[0  &nbsp; 4]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>Multiply every element by 3</li>
+        <li>[6 &nbsp; −3]</li>
+        <li>[0 &nbsp; 12]</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 4 – Matrix multiplication</h3>
+    <p>
+        Compute A·B, where:<br><br>
+        A = [1  &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3  &nbsp; 4]<br><br>
+        B = [0  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[1  &nbsp; 0]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>result is a 2×2 matrix</li>
+        <li>first: 1·0 + 2·1 = 2</li>
+        <li>second: 1·1 + 2·0 = 1</li>
+        <li>third: 3·0 + 4·1 = 4</li>
+        <li>fourth: 3·1 + 4·0 = 3</li>
+        <li><b>Result: [2 &nbsp; 1], [4 &nbsp; 3]</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 5 – Transpose</h3>
+    <p>
+        Find Aᵀ.<br><br>
+        A = [1 &nbsp; 4 &nbsp; 7]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2 &nbsp; 5 &nbsp; 8]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>Swap rows and columns</li>
+        <li>[1 &nbsp; 2]</li>
+        <li>[4 &nbsp; 5]</li>
+        <li>[7 &nbsp; 8]</li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 6 – Determinant 2×2</h3>
+    <p>
+        Compute the determinant of matrix:<br>
+        A = [3  &nbsp; 1]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[4  &nbsp; 2]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>|A| = 3·2 − 1·4</li>
+        <li>|A| = 6 − 4</li>
+        <li><b>|A| = 2</b></li>
+    </ul>
+
+
+    <h3 style="color:#c8f7ff;">Example 7 – Inverse matrix</h3>
+    <p>
+        Find A⁻¹ for matrix A =
+        [1 &nbsp; 2]<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[3 &nbsp; 4]
+    </p>
+
+    <ul style="text-align:left;">
+        <li>determinant: |A| = 1·4 − 2·3 = −2</li>
+        <li>formula for 2×2 inverse:</li>
+        <li>A⁻¹ = (1/|A|) · [d &nbsp; −b]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[−c &nbsp; a]</li>
+        <li>A⁻¹ = (-1/2) · [4 &nbsp; −2]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-4 &nbsp; 1]</li>
+        <li><b>A⁻¹ = [-2 &nbsp; 1], [2 &nbsp; -0.5]</b></li>
+    </ul>
+
+</section>
+
+
+
+<footer>
+    <p>© 2025 Mathematics I</p>
+</footer>
+
+</body>
+</html>
